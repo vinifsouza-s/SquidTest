@@ -19,11 +19,10 @@ function addDate(data) {
   };
 
 async function infoapi() {
-    const url = await fetch('https://us-central1-squid-apis.cloudfunctions.net/test-front-basic');
-    const res =  await url.json();
+    const url = await fetch('https://us-central1-squid-apis.cloudfunctions.net/test-front-basic')
+    const res =  await url.json()
     console.log(res);
-
-
+    
 res.forEach((contents) => {
 
     const {  comentarios, criadoEm, link, 

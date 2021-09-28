@@ -1,5 +1,17 @@
 {
+  "name": "SquidTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vinifsouza-s/SquidTest.git",
+  "author": "Vinicius Souza vinicius.sfs91@gmail.com",
+  "license": "MIT",
   "dependencies": {
-    "@squidit/css": "^1.1.7"
+    "@squidit/css": "^1.1.7",
+    "concurrently": "^6.2.2",
+    "http-server": "^13.0.2"
+  },
+  "scripts": {
+    "start": "npm run open-server",
+    "open-server": "concurrently \"yarn http-server -a localhost -p 8080\" \"start http://localhost:8080\""
   }
 }
